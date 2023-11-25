@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inintial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Apatity</title>
+
+<style>
+    .fakeimg {
+                height: 200px;
+                background: #aaa;
+            }
+    
+    .dropbtn {
+        background-color: greenyellow;
+        color: black;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .dropbtn:hover,
+    .dropbtn:focus {
+        background-color: yellowgreen;
+    }
+    
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: yellowgreen;
+        width: 100%;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: greenyellow;}
+    
+    .show {display: block;}
+    
+    .pagination {
+        display: inline-block;
+    }
+    
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+    }
+    
+    .pagination a.active {
+        background-color: #4caf50;
+        color: white;
+        border-radius: 5px;
+    }
+    
+    .pagination a:hover:not(.active) {
+        background-color: #ddd;
+        border-radius: 5px;
+    }
+    
+    .center {text-align: center;}
+    
+     /* Слайды */
+    #slider {
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    .slide {
+        width: 100%;
+        display: none;
+        position: relative;
+    }
+    
+    
+    .slide.active {
+        display: block;
+    }
+    
+    /* Footer */
+    .footer {
+        background-color: #f1f1f1;
+        padding: 40px;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+        
+        .fa {
+        font-size: 24px;
+        padding: 4px;
+        color: black;
+    }
+    
+    .fa:hover {
+        font-size: 26px;
+        color: yellowgreen;
+    }
+    .footer {height: 270px;}
+
+</style>
+</head>
+
+<body>
+<div class="jumbotron text-center" style=" margin: 0px; border-radius: 0; background-image: url(img/Severnoe%20siyanie.jpg); color: greenyellow;">
+       <h1>Маленький северный городок Мурманской области</h1>
+       <p style="font-size: 30px">Апатиты</p>
+   </div>
+   
+   <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn" style="outline: none;">Меню</button>
+       <div id="myDropdown" class="dropdown-content">
+          <ul class="navbar-nav">
+           <li><a href="../Apatity.html" style="color: black; margin-left: 0px;">Главная</a></li>
+           <li><a href="#" style="color: black; margin-left: 0px;">Постройка</a></li>
+           <li><a href="../pages/page3.html" style="color: black; margin-left: 0px;">Туризм</a></li>
+           <li><a href="../pages/page4.html" style="color: black; margin-left: 0px;">Кировск</a></li>
+           <li><a href="../pages/page5.html" style="color: black; margin-left: 0px;">BigWood</a></li>
+           </ul> 
+       </div>
+   </div>
+   
+    <div class="container" style="margin-top: 30px">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2 style="text-align: center; font-size: 40px; color: yellowgreen;">Основание Апатитов</h2>
+                <img src="img/postroyka1.jpg" width="100%">
+                 <p style="text-align: justify;">В 1916 году был основан как разъезд Белый (ныне железнодорожная станция Апатиты-1) в связи с началом строительства Мурманской железной дороги. В ходе Гражданской войны в России с августа 1918 года по февраль 1920 года находился под управлением Северной области. Посёлок Апатиты был образован в 1926 году и насчитывал всего 7 жителей. В 1930 году основан совхоз «Индустрия». В связи с открытием и разработкой Хибинских месторождений апатито-нефелиновых руд в 1935 году становится рабочим посёлком городского типа с включением в него посёлка совхоза «Индустрия».</p>
+                <br>
+                <h5>С 1963 года началось крупнопанельное домостроение</h5>
+                <div>
+                <img src="img/postroyka2.jpg" width="100%">
+                <br>
+                <br>
+                <br>
+                <h3 style="font-size: 20px">7 июля 1966 г. по указу Президиума Верховного Совета СССР рабочий поселок Апатиты (а фактически, Новый город) был переименован в город.</h3>
+                <img src="img/postroyka3.jpg" width="100%">
+                <br>
+                <br>
+                <br>
+                <h3 style="font-size: 20px">На площади Ленина построен новый монумент «Землякам, погибшим в годы Великой Отечественной войны». Начали появляться новые уличные достопримечательности. Началось улучшение благоустройства улиц, парков и скверов.</h3>
+                <img src="img/postroyka4.jpg" width="100%">
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                <h2 style="text-transform: uppercase; color: yellowgreen;">История города</h2>
+                <hr>
+                <h3 style="text-align: center;">Апатиты во время Великой Отечественной войны</h3>
+                <p  style="font-size: 15px;">Во время Великой Отечественной войны Кольский полуостров был отрезан от основной части страны, и посёлок Апатиты был ответственен за производство продуктов питания для не эвакуированных жителей Заполярья. На проведение сельскохозяйственных работ привлекалось всё трудоспособное население. Несмотря на трудности, вызванные условиями войны, большой недостаток механической силы, рабочих рук, горючего, неблагоприятные климатические условия, план посевных площадей за 1942 год выполнен на 103,3 %, а по коллективным и индивидуальным огородам в 1941 году площадь увеличилась с 28 га до 71,2 га.</p>
+                
+                <br>
+                <h3 style="text-align: center;">Постройка города</h3>
+                <p style="text-align: justify;"> Закладка города началась в 1951 году, намечен план первых одиннадцати зданий. В 1954 году начато строительство академгородка. Смерть Сталина приостановила работы по строительству города. Всё замерло вплоть до 1956 года. Только когда начались работы по строительству Кировской ГРЭС, а также проектирование АНОФ-2, строительные работы возобновились. В 1956 году был сдан первый дом. Равнинный рельеф местности позволял строить широкие, ровные и длинные улицы. Был основан строительный трест «Апатитстрой», начато строительство не только жилых домов, но и школ, учреждений культуры, детских садов. В 1961 году в Апатиты перебазирован Кольский филиал Академии наук СССР.
+Преобразован в город 7 июля 1966 года. Тогда же в его состав включён посёлок городского типа Молодёжный (население в 1959 году — 5980 человек). Начался город с улицы Социалистической, которая застраивались уже пятиэтажными шлакоблочными домами. Город начал расти настолько большими темпами, что пришлось менять план застройки города три раза. Изначально план рассчитывал на строительство города малоэтажной застройки населением в 30 тысяч человек. В 1976 был утверждён новый генеральный план застройки с застройкой девятиэтажными, семиэтажными, пятиэтажными домами с населением города в 100000 человек. Генплан также предусматривал дальнейшее развитие города.
+В начале 90-х годов из-за падения экономики СССР генплан завершить стало невозможно. Институтом ЛЕННИИП был разработан новый, который существенно расширил границы города. Этим планом были предусмотрены новые социально-культурные учреждения. Как пример, можно привести проекты спортивно-оздоровительного и культурно-торгового комплексов. Но из-за распада СССР и последовавшего за ним кризиса выполнение плана было заброшено</p>
+                <img src="img/postroyka5.jpg" width="100%;">
+     
+                <br>
+                <br>
+                <br>           
+      <h3 style="text-align: center;">Наши дни</h3>
+    <div id="slider">
+        <div class="slide">
+            <h6>Главная площадь Ленина.</h6>
+            <img src="img/nashiDni1.jpg"  alt="Image1" width="100%;">
+        </div>
+        <div class="slide">
+            <h6>Гостиница «Аметист» — по сути, единственная в городе.</h6>
+            <img src="img/nashiDni2.jpg" alt="Image1" width="100%;">
+        </div>
+        <div class="slide">
+            <h6>Главная дорога площади Ленина.</h6>
+            <img src="img/nashiDni3.jpg" alt="Image2" width="100%;">
+        </div>
+        <div class="slide">
+            <h6>ДК «Строителей» с фреской на торце.</h6>
+            <img src="img/nashiDni4.jpg" alt="Image3" width="100%;">
+        </div>
+        <div class="slide">
+            <h6>Единственное действительно интересное здание — городская библиотека. На втором этаже расположен краеведческий музей.</h6>
+            <img src="img/nashiDni5.jpg" alt="Image4" width="100%;">
+        </div>
+        <div class="slide">
+            <h6>Если заглянуть сзади, то видно, что даже такие сложные формы все равно строили из силикатного кирпича.</h6>
+            <img src="img/nashiDni6.jpg" alt="Image5" width="100%;">
+        </div>
+        <div class="slide">
+            <h6>Спортивный комплекс «Атлет».</h6>
+            <img src="img/nashiDni7.jpg" alt="Image6" width="100%;">
+        </div>
+        <div class="slide">
+            <h6>Высотная доминанта на площади Геологов.</h6>
+            <img src="img/nashiDni8.jpg" alt="Image7" width="100%;">
+        </div>
+        <div class="slide">
+            <h6>Памятник погибшим в ВОВ.</h6>
+            <img src="img/pamyatnik-pogibshim-v-vov.jpg" alt="Image8" width="100%;">
+        </div> 
+        <div class="slide">
+            <h6>Храм Новомучеников и Исповедников Российских.</h6>
+            <img src="img/hram-novomuchenikov-i-ispovednikov-rossiyskih.jpg" alt="Image9" width="100%;">
+        </div> 
+        <div class="slide">
+            <h6>Здание Геологического института.</h6>
+            <img src="img/zdanie.jpg" alt="Image10" width="100%;">
+        </div>
+    </div>
+    </div>
+                        
+        </div>
+    </div>
+    
+
+    
+    
+    <br>
+    <br>
+    <br>
+    
+   
+    
+    <br>
+    <br>
+    <br>
+    
+    <h1 style="font-size: 15px; text-align: center;">Навигация</h1>
+<div class="center">
+<div class="pagination">
+    <a href="../Apatity.html">1</a>
+    <a href="#">2</a>
+    <a href="../pages/page3.html">3</a>
+    <a href="../pages/page4.html">4</a>
+    <a href="../pages/page5.html">5</a>
+     </div>
+</div>
+   
+   <div class="footer">
+      <div class="column"><p>Автор: Галкова Е.И</div>
+      <div class="column"><p>Сайт 2023</p></div>
+      <div class="column"><p>Ищи меня в соцсетях:
+      <br>
+      <a href="https://vk.com/kaaatooos" onclick="window.open(url)" target="_blank" class="fa fa-vk" style="text-decoration: none;"></a>
+      <a href="https://t.me/@katos18" onclick="window.open(url)" target="_blank" class="fa fa-telegram" style="text-decoration: none;"></a>
+      </p></div>
+</div>
+
+<script>
+   function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    
+    var slides = document.querySelectorAll('.slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,4000);
+
+function nextSlide() {
+  slides[currentSlide].className = 'slide';
+  currentSlide = (currentSlide+1)%slides.length;
+  slides[currentSlide].className = 'slide active';
+}
+   
+    </script>
+ </body>
+</html>

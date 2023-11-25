@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inintial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Apatity</title>
+
+<style>
+    .fakeimg {
+                height: 200px;
+                background: #aaa;
+            }
+    
+    .dropbtn {
+        background-color: greenyellow;
+        color: black;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .dropbtn:hover,
+    .dropbtn:focus {
+        background-color: yellowgreen;
+    }
+    
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: yellowgreen;
+        width: 100%;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: greenyellow;}
+    
+    .show {display: block;}
+    
+    .pagination {
+        display: inline-block;
+    }
+    
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+    }
+    
+    .pagination a.active {
+        background-color: #4caf50;
+        color: white;
+        border-radius: 5px;
+    }
+    
+    .pagination a:hover:not(.active) {
+        background-color: #ddd;
+        border-radius: 5px;
+    }
+    
+    .center {text-align: center;}
+    
+    
+    .footer {
+        background-color: #f1f1f1;
+        padding: 40px;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+        
+        .fa {
+        font-size: 24px;
+        padding: 4px;
+        color: black;
+    }
+    
+    .fa:hover {
+        font-size: 26px;
+        color: yellowgreen;
+    }
+    .footer {height: 270px;}
+
+</style>
+</head>
+
+<body>
+<div class="jumbotron text-center" style="margin: 0; border-radius: 0; background-image: url(img/Severnoe%20siyanie.jpg); color: greenyellow;">
+       <h1>Маленький северный городок Мурманской области</h1>
+       <p style="font-size: 30px">Апатиты</p>
+   </div>
+   
+   <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn" style="outline: none;">Меню</button>
+       <div id="myDropdown" class="dropdown-content">
+          <ul class="navbar-nav">
+           <li><a href="../Apatity.html" style="color: black; margin-left: 0px;">Главная</a></li>
+           <li><a href="../pages/page2.html" style="color: black; margin-left: 0px;">Постройка</a></li>
+           <li><a href="#" style="color: black; margin-left: 0px;">Туризм</a></li>
+           <li><a href="../pages/page4.html" style="color: black; margin-left: 0px;">Кировск</a></li>
+           <li><a href="../pages/page5.html" style="color: black; margin-left: 0px;">BigWood</a></li>
+           </ul> 
+       </div>
+   </div>
+   
+    <div class="container" style="margin-top: 30px">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2 style="text-align: center; font-size: 50px; color: yellowgreen;">Туризм</h2>
+                <img src="img/massiv.jpg" width="100%">
+                 <p style="text-align: justify;">Апатиты — одно из самых живописных мест Кольского полуострова, окружённое с севера Хибинскими горами, а с юга — озером Имандра. Город расположен на западе Кольского полуострова, на пересечении основных транспортных потоков. 
+                <br>
+                Главным природным объектом туристского досуга является Хибинский горный массив.</p>
+                <br>
+                <h5>Озеро Имандра - самое большое озеро на Кольском полуострове.</h5>
+                <div>
+                <img src="img/Imandra.jpg" width="100%">
+                <br>
+                <br>
+                <br>
+                <h4 style="text-transform: uppercase; color: yellowgreen;">Озеро имандра</h4>
+                 <video style="width: 100%;" controls>
+                     <source src="video/Imandra.mp4" type="video/mp4"></video>
+                <br>
+                <br>
+                <br>
+                <h3 style="font-size: 20px">Полярные сияния</h3>
+                <img src="img/Severnoe%20siyanie.jpg" width="100%">
+                <br>
+                <br>
+                <br>
+                <h4 style="text-transform: uppercase; color: yellowgreen;">Полярные сияния</h4>
+                 <video style="width: 100%;" controls>
+                     <source src="video/polyarnoe.mp4" type="video/mp4"></video>
+                
+                <br>
+                <br>
+                <br>
+                <h3 style="font-size: 20px">Ботанический (лесной) памятник «Кедры и лиственницы Хибин»</h3>
+                <img src="img/kedry.jpg" width="100%">
+                </div>
+                <br>
+                <br>
+                <br>
+                <h4 style="text-transform: uppercase; color: yellowgreen;">Езда на собачьих упряжках</h4>
+                 <video width="100%" controls>
+                     <source src="video/haski.mp4" type="video/mp4"></video>
+                <br>
+                <br>
+                <br>
+            
+    
+            </div>
+
+            <div class="col-sm-8">
+                <h2 style="text-transform: uppercase; color: yellowgreen;">Культурные мероприятия</h2>
+                <hr>
+                <h3>Дворец культуры им. В.К. Егорова</h3>
+                <h5  style="font-size: 15px;">В Апатитах работает несколько учреждений, в которых проходят главные культурные мероприятия города.</h5>
+                <img src="img/dk.jpg" style="width: 100%">
+                <p style="text-align: justify;">Цитадель апатитской культуры располагается в самом сердце города. Вместительное здание ДК было открыто в 1965 году в период расцвета поселка и получило имя главы треста «Апатитстрой». В залах Дворца по сей день проходят крупные городские мероприятия, творческие конкурсы, концерты отечественных и зарубежных звёзд, корпоративы, дискотеки и выставки.</p>
+                <br>
+                <h3>Кинотеатр «Полярный»</h3>
+                <h5>Единственный кинотеатр Апатитов и окрестностей открылся в далекий уже советский период. Крупное здание было построено в самом центре городской черты, на площади Ленина, и получило типичное для Заполярья название. После развала СССР «Полярный» был заброшен и долгое время простоял бесхозным.</h5>
+                <p style="text-align: justify;"> В 2007 году строение отремонтировали и вновь начали использовать по назначению. С тех пор кинотеатр регулярно развлекает апатитчан новинками отечественного и зарубежного кино. В дни премьер в «Полярном» особенно людно, ведь в него приезжают жители нескольких соседних населенных пунктов. При кинотеатре работает небольшое кафе.</p>
+                <img src="img/polyarny.webp" width="100%;">
+                 <div>
+                 <br>
+                 <br>
+                 <br>
+                <h3>Развлекательный парк «Хибиниум»</h3>
+                <h5>В 6 км от Апатитов работает уникальный спортивно-приключенческий парк, где в качестве аниматоров выступают не только люди, но и… хаски. «Хибиниум» предлагает активные развлечения на любой вкус: снежные горки, катание на снегоходах, квадроциклах, верёвочный городок, батут.</h5>
+                <p style="text-align: justify;">Однако самое необычное и привлекательное в нем – езда на собачьих упряжках. Красивые хаски вызывают восторг у посетителей, особенно у детей и подростков. Работники парка также проводят корпоративы и детские праздники.</p>
+                <img src="img/haski.jpg" width="100%;">
+                 <div>
+                 <br>
+                 <br>
+                 
+                 <div>
+                 <br>
+                 <br>
+                  <h3 style="text-align: center;">Карта города Апатиты</h3>
+                 <div class="Ymap">
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/10894/apatity/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Апатиты</a><a href="https://yandex.ru/maps/10894/apatity/?ll=33.407189%2C67.568024&utm_medium=mapframe&utm_source=maps&z=14" style="color:#eee;font-size:12px;position:absolute;top:14px;">Карта Апатитов с улицами и номерами домов — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=33.407189%2C67.568024&z=14" width="100%" height="620" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </div>
+                 
+                <br>
+           </div>
+          </div>
+        </div>
+    </div> 
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <h1 style="font-size: 15px; text-align: center;">Навигация</h1>
+<div class="center">
+<div class="pagination">
+    <a href="../Apatity.html">1</a>
+    <a href="../pages/page2.html">2</a>
+   <a href="#">3</a>
+    <a href="../pages/page4.html">4</a>
+    <a href="../pages/page5.html">5</a>
+     </div>
+</div>
+   
+    <div class="footer">
+      <div class="column"><p>Автор: Галкова Е.И</div>
+      <div class="column"><p>Сайт 2023</p></div>
+      <div class="column"><p>Ищи меня в соцсетях:
+      <br>
+      <a href="https://vk.com/kaaatooos" onclick="window.open(url)" target="_blank" class="fa fa-vk" style="text-decoration: none;"></a>
+      <a href="https://t.me/@katos18" onclick="window.open(url)" target="_blank" class="fa fa-telegram" style="text-decoration: none;"></a>
+      </p></div>
+</div>
+
+<script>
+   function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    
+     $(document).ready(function(e) {
+    $('audio,video').bind('play', function() {
+    activated = this;
+    $('audio,video').each(function() {
+        if(this != activated) this.pause();
+    });
+});
+$(".video-js").click(function(){
+    activated = this;
+    $('.video-js').each(function() {
+        if(this != activated) _V_($(this).attr("id")).pause();
+    });
+});
+});
+   
+    </script>
+ </body>
+</html>
